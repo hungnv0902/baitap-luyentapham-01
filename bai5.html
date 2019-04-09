@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="star(prompt('Nhập tên chòm sao'))" >
+    <script>
+        function star(conste) {
+            let a = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" ,"Regulus"];
+            let b = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"];
+            for (let i = 0; i < a.length; i ++) {
+                if (conste == a[i]) {
+                   return alert(conste + " thuộc chòm sao " + b[i]);
+                }
+            }
+            return alert("Không tìm thấy ngôi sao này!");
+        }
+    </script>
+
+</body>
+</html>
